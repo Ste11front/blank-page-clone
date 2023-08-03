@@ -4,7 +4,7 @@
 // - il testo scritto deve essere memorizzato nel local storage e ricaricato al ritono dell'utente
 // - conto del numero di parole e del numero di caratteri
 // - (permettere) download del txt
-// - farlo bello!!! (tema)
+// - farlo bello!!! (estetica)
 
 
 // Funzionalità aggiuntive:
