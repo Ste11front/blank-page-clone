@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: white;
+    --accent-color: pink;
+    --text-color: black;
+}
+
+html, body{
+    height: 100vh;
+    margin: 0px;
+}
+
+body{
+
+}
+
+.dark{
+    --primary-color: #313131;
+    --accent-color: crimson;
+    --text-color: white;
+}
+
+.theme-checkbox:checked ~ body{
+    --primary-color: #313131;
+    --accent-color: crimson;
+    --text-color: white; 
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:8px;
+    border: 1px solid lime;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.text-div{
+    flex: 1;
+    border: 1px solid crimson;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
