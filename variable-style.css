@@ -2,19 +2,15 @@
     box-sizing: border-box;
 }
 
-:root{
-    --primary-color: white;
-    --accent-color: pink;
-    --text-color: black;
-}
-
 html, body{
     height: 100vh;
     margin: 0px;
 }
 
 body{
-
+    --primary-color: white;
+    --accent-color: pink;
+    --text-color: black;
 }
 
 .dark{
