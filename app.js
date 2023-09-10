@@ -14,39 +14,39 @@
 // - scaricare la pagina web
 
 
-function printValue(){
-    const div = document.getElementById('text-div')
+// function printValue(){
+//     const div = document.getElementById('text-div')
 
-}
+// }
 
-function changeTheme(){
+// function changeTheme(){
 
-    if(document.body.className === 'light'){
-        document.body.className = 'red'
-    } else if(document.body.className === 'red'){
-        document.body.className = 'dark';
-    } else if(document.body.className === 'dark'){
-        document.body.className = 'light';
-    } else {
-        document.body.className = 'red';
-    }
+//     if(document.body.className === 'light'){
+//         document.body.className = 'red'
+//     } else if(document.body.className === 'red'){
+//         document.body.className = 'dark';
+//     } else if(document.body.className === 'dark'){
+//         document.body.className = 'light';
+//     } else {
+//         document.body.className = 'red';
+//     }
 
-    console.log(document.body.className)
-}
+//     console.log(document.body.className)
+// }
 
 
-function changeTheme2(){
+// function changeTheme2(){
 
-    const styleLink = document.getElementById('main-style');
-    console.log(styleLink.href)
+//     const styleLink = document.getElementById('main-style');
+//     console.log(styleLink.href)
 
-    if (styleLink.href.includes('dark')) {
-        styleLink.href = './style.css'
-    } else {
-        styleLink.href = './dark-style.css'
-    }
+//     if (styleLink.href.includes('dark')) {
+//         styleLink.href = './style.css'
+//     } else {
+//         styleLink.href = './dark-style.css'
+//     }
 
-}
+// }
 
 function changeTheme3(){
 
@@ -84,7 +84,10 @@ function loadText() {
 // Funzione per contare le parole e i caratteri
 function countWordsAndChars() {
     const div = document.getElementById('text-div');
-    const text = div.innerText;
+    let text = div.innerText;
+    if (text.length > 0) { // Se c'è almeno un carattere
+        text = text.slice(1); // Rimuove il primo carattere
+    }
     const words = text.split(/[\s'.,;:!?]+/).filter(function(word) { return word.length > 0; });
     document.getElementById('word-count').innerText = 'Parole: ' + words.length;
     document.getElementById('char-count').innerText = 'Caratteri: ' + text.length;
