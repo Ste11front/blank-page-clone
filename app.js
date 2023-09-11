@@ -85,12 +85,15 @@ function loadText() {
 function countWordsAndChars() {
     const div = document.getElementById('text-div');
     let text = div.innerText;
-    if (text.length > 0) { // Se c'è almeno un carattere
-        text = text.slice(1); // Rimuove il primo carattere
-    }
+    // if (text.length > 0) { // Se c'è almeno un carattere
+    //     text = text.slice(1); // Rimuove il primo carattere
+    // }
     const words = text.split(/[\s'.,;:!?]+/).filter(function(word) { return word.length > 0; });
     document.getElementById('word-count').innerText = 'Parole: ' + words.length;
     document.getElementById('char-count').innerText = 'Caratteri: ' + text.length;
+    // Rimuove gli spazi prima di contare i caratteri
+    const chars = text.replace(/\s/g, '');
+    document.getElementById('char-count').innerText = 'Caratteri: ' + chars.length;
 }
 
 // Aggiungi un event listener per contare le parole e i caratteri ogni volta che il testo viene modificato
