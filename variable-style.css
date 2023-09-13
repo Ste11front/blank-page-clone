@@ -17,6 +17,7 @@ body{
     --primary-color: #313131;
     --accent-color: crimson;
     --text-color: white;
+    background-color: #313131;
 }
 
 .theme-checkbox:checked ~ body{
@@ -37,17 +38,22 @@ body{
     align-items: center;
     justify-content: center;
     gap:8px;
-    border: 1px solid lime;
+    border: 2px solid gray;
     background-color: var(--accent-color);
     color: var(--text-color);
 }
 
 .text-div{
     flex: 1;
-    border: 1px solid crimson;
+    /* border: 1px solid crimson; */
     background-color: var(--primary-color);
     color: var(--text-color);
-    /* margin-top: 10px;
+    margin-top: 10px;
     margin-left : 200px;
-    margin-right: 200px; */
+    margin-right: 200px;
+}
+
+#text-div:focus {
+    outline-style: solid;
+    outline-color: gray;
 }
