@@ -48,9 +48,14 @@ body{
     /* border: 1px solid crimson; */
     background-color: var(--primary-color);
     color: var(--text-color);
-    margin-top: 10px;
-    margin-left : 200px;
-    margin-right: 200px;
+}
+
+@media (min-width: 992px) { 
+    .text-div{
+        margin-top: 10px;
+        margin-left : 200px;
+        margin-right: 200px;
+    }
 }
 
 #text-div:focus {
