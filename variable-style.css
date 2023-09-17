@@ -48,8 +48,13 @@ body{
     /* border: 1px solid crimson; */
     background-color: var(--primary-color);
     color: var(--text-color);
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#text-div:focus {
+    outline-style: solid;
+    outline-color: gray;
 }
 
 @media (min-width: 992px) { 
@@ -57,10 +62,5 @@ body{
         margin-top: 10px;
         margin-left : 200px;
         margin-right: 200px;
-    }
-
-    #text-div:focus {
-        outline-style: solid;
-        outline-color: gray;
     }
 }   
