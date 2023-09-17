@@ -48,8 +48,8 @@ body{
     /* border: 1px solid crimson; */
     background-color: var(--primary-color);
     color: var(--text-color);
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 #text-div:focus {
