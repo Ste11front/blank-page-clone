@@ -7,19 +7,23 @@ html, body{
     margin: 0px;
 }
 
+body{
+    --primary-color: white;
+    --accent-color: lightblue;
+    --text-color: black;
+}
+
 .dark{
+    --primary-color: #313131;
+    --accent-color: crimson;
+    --text-color: white;
     background-color: #313131;
-    color: white;
 }
 
-.light{
-    background-color: white;
-    color: #313131;
-}
-
-.red{
-    background-color: crimson;
-    color: black;
+.theme-checkbox:checked ~ body{
+    --primary-color: #313131;
+    --accent-color: crimson;
+    --text-color: white; 
 }
 
 .main{
@@ -32,12 +36,39 @@ html, body{
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap:8px;
-    border: 1px solid lime;
+    border: 2px solid gray;
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 .text-div{
     flex: 1;
-    border: 1px solid crimson;
+    /* border: 1px solid crimson; */
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.text-div{
+    margin-top: 10px;
+    margin-left : 200px;
+    margin-right: 200px;
+}
+
+#text-div:focus {
+    outline-style: solid;
+    outline-color: gray;
+}
+
+@media (max-width: 992px) { 
+    .text-div{
+        margin-top: 10px;
+        margin-left : 20px;
+        margin-right: 20px;
+    }
+
+    #text-div:focus {
+        outline: none;
+    }
 }
