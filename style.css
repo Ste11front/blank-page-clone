@@ -41,6 +41,7 @@ body{
     border: 2px solid gray;
     background-color: var(--accent-color);
     color: var(--text-color);
+    font-size: 18px; /* Font scalabile */
 }
 
 .text-div{
@@ -48,6 +49,7 @@ body{
     /* border: 1px solid crimson; */
     background-color: var(--primary-color);
     color: var(--text-color);
+    font-size: 18px; /* Font scalabile */
 }
 
 .text-div{
